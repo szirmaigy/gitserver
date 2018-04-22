@@ -18,5 +18,5 @@ COPY sshd_config /etc/ssh/
 
 WORKDIR /opt/repos
 
-CMD ["/user/local/bin/gitserver.sh"]
+CMD ["/usr/local/bin/gitserver.sh"]
 

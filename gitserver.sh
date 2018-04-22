@@ -2,7 +2,7 @@
 
 rm -rf /home/git
 adduser --home /home/git --shell /usr/bin/git-shell --disabled-password --gecos "git" git
-echo "git:gitpassword" | sudo chpasswd
+echo "git:gitpassword" | chpasswd
 
 mkdir /home/git/.ssh
 chmod 700 /home/git/.ssh

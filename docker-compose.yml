@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  gitserver:
+    image: szirmaigy/gitserver
+    ports:
+      - 22:22
+    volumes:
+      - repositories:/opt/repo
+      - authorized_keys:/home/git/.ssh
+
+volumes:
+  repositories:
+  authorized_keys:
