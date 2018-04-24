@@ -24,3 +24,5 @@ EOF
 chsh git -s $(which git-shell)
 
 service restart sshd
+
+ExecStart=/usr/bin/sshd
